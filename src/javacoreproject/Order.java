@@ -11,6 +11,9 @@ public class Order {
 
     private List<OrderDetails> orderDetails = new ArrayList<OrderDetails>();
 
+    public Order() {
+
+    }
 
     public Order(int id, String customerName, String customerPhoneNumber, String customerEmailAddress) {
         this.id = id;

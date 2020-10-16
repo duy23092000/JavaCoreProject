@@ -39,13 +39,13 @@ public class ProductSystem {
 
     public void show() {
         System.out.println("**Product list**");
-        System.out.println(String.format("%5s %5s %12s %9s %12s %5s %17s %8s %10s", "ID", "|", "Name", "|",
-                "Quantity", "|", "Description", "|", "Price"));
+        System.out.printf("%5s %5s %12s %9s %12s %5s %17s %8s %10s%n", "ID", "|", "Name", "|",
+                "Quantity", "|", "Description", "|", "Price");
         System.out.println("-----------------------------------------------------------------" +
                 "--------------------------------");
         for (Product p : App.PRODUCTS) {
-            System.out.println(String.format("%5s %5s %12s %9s %10s %7s %17s %8s %10s", p.getId(), "|", p.getProductName(), "|",
-                    p.getProductQuantity(), "|", p.getProductDescription(), "|", p.getPrice()));
+            System.out.printf("%5s %5s %12s %9s %10s %7s %17s %8s %10s%n", p.getId(), "|", p.getProductName(), "|",
+                    p.getProductQuantity(), "|", p.getProductDescription(), "|", p.getPrice());
         }
         System.out.println();
     }
