@@ -44,7 +44,7 @@ public class ProductSystem {
         System.out.println("-----------------------------------------------------------------" +
                 "--------------------------------");
         for (Product p : App.PRODUCTS) {
-            System.out.printf("%5s %5s %12s %9s %10s %7s %17s %8s %10s%n", p.getId(), "|", p.getProductName(), "|",
+            System.out.printf("%5s %5s %12s %9s %12s %5s %17s %8s %10s%n", p.getId(), "|", p.getProductName(), "|",
                     p.getProductQuantity(), "|", p.getProductDescription(), "|", p.getPrice());
         }
         System.out.println();
@@ -73,7 +73,7 @@ public class ProductSystem {
                     "Quantity", "|", "Description", "|", "Price");
             System.out.println("-----------------------------------------------------------------" +
                     "--------------------------------");
-            System.out.printf("%5s %5s %12s %9s %10s %7s %17s %8s %10s%n", p1.getId(), "|", p1.getProductName(), "|",
+            System.out.printf("%5s %5s %12s %9s %12s %5s %17s %8s %10s%n", p1.getId(), "|", p1.getProductName(), "|",
                     p1.getProductQuantity(), "|", p1.getProductDescription(), "|", p1.getPrice());
             for (int i = 0; i < App.PRODUCTS.size(); i++) {
                 if (id == App.PRODUCTS.get(i).getId()) {

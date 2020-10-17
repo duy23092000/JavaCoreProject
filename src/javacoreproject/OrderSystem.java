@@ -80,8 +80,8 @@ public class OrderSystem {
                 "--------------------------------");
         ProductSystem productSystem = new ProductSystem();
         for (Order order : App.ORDERS) {
-            System.out.printf("%5s %5s %12s %9s %10s %7s %17s%n", order.getId(), "|", order.getCustomerName(), "|",
-                    order.getCustomerPhoneNumber(), "|", order.getCustomerEmailAddress());
+            System.out.printf("%5s %5s %12s %9s %12s %5s %17s%n", order.getId(), "|", order.getCustomerName(), "|",
+                    order.getCustomerEmailAddress() , "|",order.getCustomerPhoneNumber()) ;
 
             System.out.println();
 
