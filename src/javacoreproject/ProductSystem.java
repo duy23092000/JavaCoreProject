@@ -7,7 +7,7 @@ public class ProductSystem implements ProductService {
     @Override
     public void add() {
         Scanner input = new Scanner(System.in);
-        System.out.println("**Enter product information**");
+        System.out.println("** Enter product information **");
         try {
             System.out.println("Enter product's ID:");
             int id = input.nextInt();
@@ -40,7 +40,7 @@ public class ProductSystem implements ProductService {
 
     @Override
     public void show() {
-        System.out.println("**Product list**");
+        System.out.println("** Product list **");
         System.out.printf("%5s %5s %12s %9s %12s %5s %17s %8s %10s%n", "ID", "|", "Name", "|",
                 "Quantity", "|", "Description", "|", "Price");
         System.out.println("-----------------------------------------------------------------" +
@@ -71,7 +71,7 @@ public class ProductSystem implements ProductService {
                 System.out.println("This ID does not exist, please try again!");
             }
 
-            System.out.println("Product information");
+            System.out.println("** Product information **");
             System.out.printf("%5s %5s %12s %9s %12s %5s %17s %8s %10s%n", "ID", "|", "Name", "|",
                     "Quantity", "|", "Description", "|", "Price");
             System.out.println("-----------------------------------------------------------------" +
