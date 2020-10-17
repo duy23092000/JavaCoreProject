@@ -3,7 +3,8 @@ package javacoreproject;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ProductSystem {
+public class ProductSystem implements ProductService {
+    @Override
     public void add() {
         Scanner input = new Scanner(System.in);
         System.out.println("**Enter product information**");
@@ -37,6 +38,7 @@ public class ProductSystem {
         }
     }
 
+    @Override
     public void show() {
         System.out.println("**Product list**");
         System.out.printf("%5s %5s %12s %9s %12s %5s %17s %8s %10s%n", "ID", "|", "Name", "|",
@@ -50,6 +52,7 @@ public class ProductSystem {
         System.out.println();
     }
 
+    @Override
     public void update() {
         Scanner input = new Scanner(System.in);
         try {
@@ -108,6 +111,7 @@ public class ProductSystem {
         }
     }
 
+    @Override
     public void delete() {
         Scanner input = new Scanner(System.in);
         try {

@@ -3,7 +3,8 @@ package javacoreproject;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class OrderSystem {
+public class OrderSystem implements OrderService {
+    @Override
     public void order() {
         Scanner input = new Scanner(System.in);
         System.out.println("---------------ORDER PRODUCT HERE!---------------");
@@ -72,6 +73,7 @@ public class OrderSystem {
 
     }
 
+    @Override
     public void show() {
         System.out.println("**Order list**");
         System.out.printf("%5s %5s %12s %9s %12s %5s %17s%n", "ID", "|", "Name", "|",
